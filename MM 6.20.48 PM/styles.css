@@ -1,0 +1,602 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #F5F4F0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+body {
+    font-family: 'Halcom', sans-serif;
+    color: #2c3430;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #F5F4F0;
+    padding: 10px 20px;
+    position: fixed;
+    width: calc(100% - 40px);
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+nav .name {
+    font-family: 'Halcom', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    text-transform: none;
+    text-align: left;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+nav ul li a {
+    font-family: 'Halcom', sans-serif;
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: none;
+    padding-bottom: 2px;
+    border-bottom: none;
+}
+
+nav ul li a.active {
+    color: #555;
+    border-bottom: 1px solid #555;
+    font-weight: normal;
+    padding-bottom: 2px;
+}
+
+#home {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#home h1 {
+    font-family: 'p22-mackinac-pro', serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: #2c3430;
+    line-height: 1.1;
+    white-space: pre-wrap;
+    margin: 0;
+    z-index: 2;
+}
+
+#home .coordinates-home {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'Halcom', sans-serif;
+    font-size: 12px;
+    color: #888;
+    text-align: left;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+#coordinates.hidden {
+    opacity: 0;
+}
+
+#coordinates {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.parallax {
+    background-image: url('_images/profile.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Halcom', sans-serif;
+    color: #888;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+.about-image-wrapper {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text-wrapper {
+    flex: 2;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.about-text-wrapper h2 {
+    font-family: 'p22-mackinac-pro', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3430;
+    margin-bottom: 10px;
+}
+
+.about-text-wrapper p {
+    font-family: 'Halcom', sans-serif;
+    font-size: 16px;
+    color: #2c3430;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+    max-width: 900px;
+    line-height: 1.6;
+    margin-right: 30px;
+    margin-bottom: 0;
+    color: #2c3430;
+}
+
+.outreach-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.outreach-column {
+    flex: 1;
+    min-width: 200px;
+    max-width: 25%;
+    padding: 20px;
+}
+
+.outreach-column h3 {
+    font-family: 'p22-mackinac-pro', serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    text-transform: none;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Default styling for all ul in outreach */
+.outreach-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Apply dashes and indent for non-"no-dash" lists */
+.outreach-column ul:not(.no-dash) li {
+    margin-bottom: 10px;
+    padding-left: 20px; /* Adds space for the dash */
+    position: relative;
+}
+
+.outreach-column ul:not(.no-dash) li::before {
+    content: '—'; /* Custom bullet */
+    position: absolute;
+    left: 0;
+    color: #9CA998; /* Color for the dash */
+}
+
+/* Reduced spacing for "no-dash" lists (Address and Coordinates) */
+.outreach-column ul.no-dash li {
+    margin-bottom: 5px; /* Less margin for "no-dash" lists */
+}
+
+.outreach-column ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.outreach-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.outreach-year {
+    display: inline-block;
+    font-weight: bold;
+    color: #505250;
+    margin-right: 8px;
+}
+
+.fade-overlay {
+    position: relative;
+    margin-top: -200px;
+    background: linear-gradient(to bottom, transparent, white);
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: #666;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+.projects-mosaic {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+@media (max-width: 1200px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 50vh;
+    }
+}
+
+.project {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project .overlay {
+    background-color: rgba(246, 245, 241, 0.95);
+    color: #2c3430;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-family: 'Halcom', sans-serif;
+    color: #2c3430;
+    font-weight: normal;
+}
+
+.project h3,
+.overlay h3 {
+    text-transform: none !important;
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #2c3430;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event {
+    flex: 1;
+    min-width: 200px;
+}
+
+.event h3 {
+    font-family: 'Halcom', sans-serif;
+    font-size: 20px;
+    color: #808484;
+}
+
+.event ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event ul li a {
+    color: #555;
+    text-decoration: none;
+}
+
+.event ul li a:hover {
+    text-decoration: underline;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 150px;
+    max-width: 20%;
+}
+
+.image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    padding: 0;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-family: 'Halcom', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-family: 'Halcom', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 10px;
+    color: #2a2929;
+}
+
+.project-info p {
+    font-family: 'Halcom', sans-serif;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.project-info a {
+    font-family: 'Halcom', sans-serif;
+    color: #6e7171;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+.full-portfolio-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.full-portfolio-link a {
+    font-family: 'Halcom', sans-serif;
+    color: #757878;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.full-portfolio-link a:hover {
+    text-decoration: underline;
+}
+
+.find-me-info p,
+.find-me-info a {
+    font-family: 'Halcom', sans-serif;
+    font-size: 16px;
+    color: #383737;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.find-me-info a {
+    color: #929494;
+    text-decoration: none;
+}
+
+.find-me-info a:hover {
+    text-decoration: underline;
+}
+
+.find-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.find-me-column {
+    flex: 1;
+    min-width: 200px;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.find-me-column h3 {
+    font-family: 'Halcom', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-transform: none;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.find-me-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.find-me-column ul li {
+    margin-bottom: 10px;
+    font-family: 'Halcom', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.find-me-column ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.find-me-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.find-me-social-icons a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#contact {
+    padding: 40px 20px;
+    background-color: #F5F4F0;
+}
+
+.outreach-column ul.no-dash {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.outreach-column ul li {
+    margin-bottom: 10px;
+    font-family: 'Halcom', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.outreach-column ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.outreach-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.find-me-social-icons a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
