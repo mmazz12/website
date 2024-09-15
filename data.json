@@ -1,0 +1,268 @@
+{
+    "home": {
+      "title": "— I AM A RESEARCHER, CURIOUS ABOUT GLOBAL WAYS OF LIVING.",
+      "subtitle": "ENVIRONMENTS AND LIVES CONNECTED THROUGH DIGITAL DATA",
+      "coordinates": [
+        "MIT Senseable City Lab",
+        "Boston | 42.3601° N, 71.0942° W",
+        "Dubai | 25.2048° N, 55.2708° E",
+        "Rio de Janeiro | 22.9068° S, 43.1729° W",
+        "Milan | 45.4642° N, 9.1900° E"
+      ]
+    },
+    "about": {
+      "quote": "I'm driven by the challenges and opportunities at the intersection of digital technology and physical space",
+      "bio": [
+        "As a Senior Postdoctoral Researcher at MIT Senseable City Lab, I lead its Global Labs —Amsterdam, Dubai, Rio— where my work bridges technology, design, and urban science. With a PhD in urban design and data science, I explore how physical, digital, and human interactions shape urban environments.",
+        "I lead projects featured in journals like Nature Computational Science, Nature Water, and Nature Cities, where my data visualizations have featured on the cover.",
+        "My focus is on identifying context-specific problems and creating scalable, globally applicable solutions. Whether it's enhancing workplace productivity, understanding the impact of proximity on our environments, or fostering serendipity in walkable cities, my research aims to transform and improve urban life. While leading MIT's Senseable City Global Labs, I collaborate with partners worldwide, constantly seeking new challenges and innovative solutions in our evolving urban landscapes."
+      ]
+    },
+    "projects": [
+      {
+        "title": "Proximate",
+        "description": "What is the impact of physical proximity on our working environments to foster new collaborations?.",
+        "image": "_images/proximate.jpg"
+      },
+      {
+        "title": "Data Slots",
+        "description": "What is the trade-off between privacy concerns and benefits in data-driven solutions?",
+        "image": "_images/data_slots.jpg"
+      },
+      {
+        "title": "Boiling Mississippi",
+        "description": "Boil water alerts and their impact on the unexcused absence rate in schools in Mississippi.",
+        "image": "_images/boiling_mississippi.jpg"
+      },
+      {
+        "title": "Senseable City Dubai",
+        "description": "A lab focusing on sustainable cooling for urban living in Dubai.",
+        "image": "_images/senseable_dubai.jpg"
+      },
+      {
+        "title": "Senseable City Rio",
+        "description": "A lab focusing on the use of technology to improve informal settlements.",
+        "image": "_images/senseable_rio.jpg"
+      },
+      {
+        "title": "Cooling Path",
+        "description": "How do the shortest and the shadiest paths converge to improve pedestrians' thermal comfort in warm cities?",
+        "image": "_images/cooling_path.jpg"
+      },
+      {
+        "title": "The Geography of Indoors",
+        "description": "Analyzing global ways of living using computer vision on Airbnb images",
+        "image": "_images/indoor_spaces.jpg"
+      },
+      {
+        "title": "Traveling Tastes",
+        "description": "How does the food landscape correlate with socioeconomic profiles and health outcomes in all neighborhoods?",
+        "image": "_images/traveling_tastes.jpg"
+      },
+      {
+        "title": "Bundling Bites",
+        "description": "How could bundling optimize delivery orders, decrease traffic, and achieve sustainability goals?",
+        "image": "_images/traveling_tastes.jpg"
+      },
+
+      {
+        "title": "Science of science",
+        "description": "How the COVID-19 pandemic affected science: collaboration and impact",
+        "image": "_images/science_collaboration.jpg"
+      },
+      {
+        "title": "Re-leaf",
+        "description": "Using computer vision to create a comprehensive catalog of tree species including their micro-cooling effect",
+        "image": "_images/re_leaf.jpg"
+      }
+    ],
+    "outreach": [
+      {
+        "title": "Talks",
+        "items": [
+          {"text": "TEDxLamia 2024 | Lamia, Greece 'Global ways of living: digital data to connect and understand cities.'", "link": "https://lnkd.in/drcygMuR"},
+          {"text": "Impact Innovation Summit | Helsingborg, Sweden 'Data-driven solution for sustainable cities.'", "link": "https://impactinnovationsummit.com/martina-mazzarello/"},
+          {"text": "World Police Summit 2024 | Dubai, UAE 'Sustainable cooling and data-driven solutions for cities.'", "link": "https://www.worldpolicesummit.com/speakers/martina-mazzarello"},
+          {"text": "EmTech Europe 2024 | Athens, Greece 'Smart Cities, Smarter Environment: Harnessing Emerging Tech for Urban Sustainability.'", "link": "https://emtecheurope.com/speakers.php"},
+          {"text": "MIT Senseable City Lab Forum of Future Cities | Boston MIT Museum, USA 'Panel firestarter on energy.'", "link": "https://senseable-forum-2023.com"},
+          {"text": "Foodture Barcelona 2023 | Barcelona, Spain 'Panel on circular design and waste transformation.'", "link": "https://www.foodture.barcelona/talks/"}
+          {"text": "BARI Conference 2023: Greater Boston’s Annual Insight-to-Impact Summit on 'Strategies for Community Driven Planning, Data Slots'| Boston, Usa", "link": "https://cssh.northeastern.edu/bari/past-conferences/bari-conference-2023-greater-bostons-annual-insight-to-impact-summit/"}
+        ]
+      },
+      {
+        "title": "Teaching",
+        "items": [
+          {"text": "Digital City Design Workshop Urban Visual Intelligence, course code 11.320 as Graduate Instructor | MIT Department of Urban Studies and Planning Spring 2024 and Politecnico di Milano.", "link": "https://student.mit.edu/catalog/m11c.html"},
+          {"text": "Design for Complexity PSSD Seminars 2024 as Visiting Professor | Politecnico di Milano, Italy", "link": "https://www11.ceda.polimi.it/schedaincarico/schedaincarico/controller/scheda_pubblica/SchedaPublic.do?&evn_default=evento&c_classe=806739&lang=IT&__pj0=0&__pj1=24f63c21697d90accc486efc37c66630"},
+          {"text": "Design for Complexity PSSD Seminars 2023 as Visiting Professor | Politecnico di Milano, Italy", "link": "https://www11.ceda.polimi.it/schedaincarico/schedaincarico/controller/scheda_pubblica/SchedaPublic.do?&evn_default=evento&c_classe=783245&__pj0=0&__pj1=c2c402efd87b4404233a010f8281f645"},
+          {"text": "Lecture on 'What’s the trade-off between privacy and benefits?' Guest Lecturer | Northestearn University, London, UK"},
+          {"text": "Senseable City: Data and Analytics course, code 11.320 as Graduate Instructor | MIT Department of Urban Studies and Planning Spring 2023 and Politecnico di Milano"},
+          {"text": "Lecture on 'Data about people and cities. What are the concerns?' as Guest Lecturer for Ph.D. Seminar on Data Ethics. Prof. Rampino, L., Sponziello, S. | Politecnico di Milano, Milan, Italy"}
+        ]
+      },
+      {
+        "title": "Workshops",
+        "items": [
+          {"text": "Biennale College Architecture 2024 as Instructor| Venice, Italy 'Tutoring Architecture Biennale projects'", "link": "https://www.labiennale.org/en/biennale-college"},
+          {"text": "What in the world do we hear? Public and private spaces through soundAI| Northeasteran University, Boston, USA", "link": "https://www.linkedin.com/posts/critical-alarms-lab_drs2024boston-soundai-machinelistening-activity-7211117111711059968-69mC?utm_source=share&utm_medium=member_desktop"},
+          {"text": "Senseable City Dubai and science storytelling| FestivalX Dubai, UAE", "link": "https://festivalx.ae/2023/workshops/"},
+          {"text": "Data Slots in-person workshop on the trade-off between privacy and benefit in data-driven solutions conducted in several countries around the world between 2022 and 2023| Mexico, Italy, United States, Brazil, United Kingdom, Netherlands, Norway, France, India, South Korea, Lebanon, Canada, Sweden, Colombia, Japan, Spain, Perú, Czech Republic", "link": "https://dataslots.org/discover"},
+          {"text": "Senseable Amsterdam Lab Summer Workshop 2023 as Instructor| Ams Institute, Amsterdam, The Netherlands", "link": "https://senseableamsterdam.mit.edu"},
+          {"text": "Tech Camp Rome 2022, USA embassy as Instructor| American Embassy in Rome, Italy", "link": "https://techcamp.america.gov/techcamps/techcamp-rome/"}
+        ]
+      },
+      {
+        "sections": [
+          {
+            "title": "Scientific Publications",
+            "items": [
+              {
+                "title": "A Geography of indoors for analyzing global ways of living using computer vision",
+                "authors": "Mazzarello, M., Duarte, F., et al.",
+                "year": 2024,
+                "publication": "Nature Cities under review",
+                "link": "https://www.researchsquare.com/article/rs-4676415/v1"
+              },
+              
+              {
+                "title": "Boil water alerts and their impact on the unexcused absence rate in public schools in Jackson, Mississippi",
+                "authors": "Kim, M., De Vito, R., Duarte, F., et al.",
+                "year": 2023,
+                "publication": "Nature Water, 1(4), 1-23",
+                "link": "https://www.nature.com/articles/s44221-023-00011-8"
+              },
+              {
+                "title": "Fostering Urban Digital Integrated Systems: The Case of Carré Laval, Canada",
+                "authors": "Mazzarello, M., Duarte, F., Mora, S., Ratti, C.",
+                "year": 2022,
+                "publication": "LA Frontiers, 9(5), 104-113",
+                "link": "https://www.frontiersin.org/articles/10.3389/frsc.2022.00059/full"
+              },
+              {
+                "title": "Optimization of photovoltaic provision in a three-dimensional city using real-time electricity demand",
+                "authors": "Zhu, R., Cheng, C., Santi, P., et al.",
+                "year": 2022,
+                "publication": "Applied Energy, 316, 1-11",
+                "link": "https://www.sciencedirect.com/science/article/pii/S0306261922007313"
+              },
+              {
+                "title": "The effect of co-location on human communication networks",
+                "authors": "Carmody, D., Mazzarello, M., Santi, P., et al.",
+                "year": 2022,
+                "publication": "Nature Computational Science, 2(8), 1-61",
+                "link": "https://www.nature.com/articles/s43588-022-00205-8"
+              },
+              {
+                "title": "Leveraging the use of digital technologies to activate public areas and foster creativity",
+                "authors": "Mazzarello, M; Ratti, C.",
+                "year": 2020,
+                "publication": "How Smart is your city? (book), 45-57",
+                "link": "https://link.springer.com/chapter/10.1007/978-3-030-23020-2_4"
+              }
+            ]
+          },
+          {
+            "title": "Op-Eds and Media",
+            "items": [
+              {
+                "title": "Balancing Privacy and Accessibility",
+                "publication": "MIT News",
+                "link": "https://dusp.mit.edu/news/balancing-privacy-accessibility-data-driven-solutions"
+              },
+              {
+                "title": "Building bridges, not silos",
+                "publication": "MIT News",
+                "link": "https://news.mit.edu/2022/mit-campus-research-interactions-0323"
+              },
+              {
+                "title": "Quantifying Costs of Contaminated Drinking Water",
+                "publication": "MIT News",
+                "link": "https://dusp.mit.edu/news/quantifying-costs-contaminated-drinking-water"
+              },
+              {
+                "title": "AI tools are rapidly changing how we imagine the urban environment",
+                "publication": "Dezeen",
+                "link": "https://www.dezeen.com/2023/02/20/ai-tools-changing-urban-environment-design/"
+              },
+              {
+                "title": "Remote working ‘led to missed collaborations and groupthink’",
+                "publication": "Times Higher Education",
+                "link": "https://www.timeshighereducation.com/news/remote-working-led-missed-collaborations-and-groupthink"
+              },
+              {
+                "title": "Do strangers make better collaborators?",
+                "publication": "Dropbox Blog",
+                "link": "https://blog.dropbox.com/topics/work-culture/do-strangers-make-better-collaborators"
+              },
+              {
+                "title": "Creating a Human-centric City with Digital Tools",
+                "publication": "Buildings and Cities",
+                "link": "https://www.buildingsandcities.org/insights/research-pathways/human-centric-city.html"
+              },
+              {
+                "title": "Smart City Technology",
+                "publication": "Kilometro Rosso Innovation District",
+                "link": "https://www.kilometrorosso.com/news/evento-fae-technology-meet-mit-senseable-city-lab-il-24-giugno-al-kilometro-rosso/"
+              },
+              {
+                "title": "FAE Technology sigla membership triennale col MIT di Boston",
+                "publication": "Bergamo news",
+                "link": "https://www.bergamonews.it/tag-personaggio/simone-mora-e-martina-mazzarello/"
+              },
+              {
+                "title": "15x30 Designers",
+                "publication": "15 domande a 30 designer",
+                "link": "https://15x30.com/designer/martina-mazzarello"
+              },
+              {
+                "title": "Mention",
+                "publication": "Money Review",
+                "link": "https://www.moneyreview.gr/announcements/133703/martina-mazzarello-senseable-city-lab-mit-prospathoyme-na-milisoyme-oles-tis-diaforetikes-glosses-poy-mila-mia-poli/"
+              }
+            ]
+          },
+          {
+            "title": "Find Me",
+            "contact": {
+              "email": "mmazz@mit.edu",
+              "address": {
+                "line1": "MIT Senseable City Lab",
+                "line2": "Massachusetts Institute of Technology",
+                "line3": "77 Massachusetts Avenue, 9-216",
+                "line4": "Cambridge, MA 02139 USA",
+                "website": "https://senseable.mit.edu"
+              },
+              "coordinates": [
+                {
+                  "location": "Boston",
+                  "coordinates": "42.3601° N, 71.0942° W"
+                },
+                {
+                  "location": "Dubai",
+                  "coordinates": "25.2048° N, 55.2708° E"
+                },
+                {
+                  "location": "Rio de Janeiro",
+                  "coordinates": "22.9068° S, 43.1729° W"
+                },
+                {
+                  "location": "Milan",
+                  "coordinates": "45.4642° N, 9.1900° E"
+                }
+              ],
+              "social": {
+                "emailIcon": "_images/email.png",
+                "instagram": {
+                  "url": "https://www.instagram.com/yourprofile",
+                  "icon": "_images/intagram.png"
+                },
+                "linkedin": {
+                  "url": "https://www.linkedin.com/in/yourprofile",
+                  "icon": "_images/linkedn.png"
+                }
+              }
+            }
+          }
+        ]
+      }
+      

@@ -1,0 +1,611 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #F5F4F0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Halcom', sans-serif;
+    color: #2c3430;
+    scroll-behavior: smooth;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+nav {
+    background-color: #F5F4F0;
+    padding: 10px 20px;
+    position: fixed;
+    width: calc(100% - 40px);
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+nav .name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    text-align: left;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* Menu icon styles */
+#menu-icon {
+    display: none; /* Initially hidden on larger screens */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it appears above other content */
+    width: 30px; /* Width of the icon */
+    height: 30px; /* Height of the icon */
+    background-color: transparent; /* Ensure no background color is set */
+    padding: 5px; /* Add some padding around the icon */
+}
+
+#menu-icon span {
+    width: 30px; /* Width of each line */
+    height: 3px; /* Height of each line */
+    background-color: #333; /* Color of the lines */
+    margin: 5px 0; /* Space between the lines */
+    border-radius: 3px; /* Rounded edges for a softer look */
+    display: block;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+/* Hover effect for the menu icon */
+#menu-icon:hover span {
+    background-color: #888; /* Change color on hover */
+}
+
+/* Active state effect for menu icon when menu is open */
+#menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Top line becomes diagonal */
+}
+
+#menu-icon.active span:nth-child(2) {
+    opacity: 0; /* Middle line disappears */
+}
+
+#menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Bottom line becomes diagonal */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    border-bottom: none;
+}
+
+nav ul li a.active {
+    color: #555;
+    border-bottom: 1px solid #555;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: flex; /* Show the menu icon on small screens */
+    }
+
+    nav .name {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50px; /* Adjust as needed to position below the nav bar */
+        left: 0;
+        background-color: #F5F4F0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    nav ul.mobile-menu-active {
+        display: flex; /* Show menu when the hamburger is clicked */
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+}
+
+/* Other styles below... */
+
+
+#home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#home h1 {
+    font-family: 'p22-mackinac-pro', serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: #2c3430;
+    line-height: 1.1;
+    white-space: pre-wrap;
+    margin: 0;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 24px; /* Mantiene la dimensione di "I am a researcher" più grande su schermi piccoli */
+    }
+}
+
+.about-text-wrapper h2 {
+    font-family: 'p22-mackinac-pro', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3430;
+    margin-bottom: 10px;
+}
+
+.about-text-wrapper p {
+    font-size: 16px;
+    color: #2c3430;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-text-wrapper h2 {
+        font-size: 18px; /* Riduce la dimensione del testo per il titolo "about me" su schermi piccoli */
+    }
+
+    .about-text-wrapper p {
+        font-size: 12px; /* Riduce la dimensione del testo per i paragrafi "about me" su schermi piccoli */
+        line-height: 1.4; /* Riduce l'altezza della linea per adattarsi alla dimensione più piccola */
+    }
+}
+
+#home .coordinates-home {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 12px;
+    color: #888;
+    text-align: left;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.parallax {
+    background-image: url('_images/profile.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #888;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text-wrapper p {
+        font-size: 12px; /* Reduce text size for about section */
+    }
+}
+
+.about-image-wrapper {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text-wrapper {
+    flex: 2;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.outreach-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.outreach-column {
+    flex: 1;
+    min-width: 200px;
+    max-width: 25%;
+    padding: 20px;
+}
+
+.outreach-column h3 {
+    font-family: 'p22-mackinac-pro', serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .outreach-column h3 {
+        font-size: 12px; /* Reduce text size for outreach headers */
+    }
+
+    .outreach-column ul li {
+        font-size: 12px; /* Reduce text size for outreach list items */
+    }
+
+    .more-button {
+        font-size: 12px; /* Smaller button font size */
+    }
+}
+
+.outreach-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.outreach-column ul:not(.no-dash) li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.outreach-column ul:not(.no-dash) li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #9CA998;
+}
+
+.outreach-column ul.no-dash li {
+    margin-bottom: 5px;
+}
+
+.outreach-column ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.outreach-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.outreach-year {
+    display: inline-block;
+    font-weight: bold;
+    color: #505250;
+    margin-right: 8px;
+}
+
+.more-button {
+    display: block;
+    color: #666;
+    cursor: pointer;
+    text-align: left;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Reduce footer text size on smaller screens */
+    }
+}
+
+.projects-mosaic {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+@media (max-width: 1200px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-mosaic {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 50vh;
+    }
+}
+
+.project {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project .overlay {
+    background-color: rgba(246, 245, 241, 0.95);
+    color: #2c3430;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #2c3430;
+    font-weight: normal;
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #2c3430;
+}
+
+.find-me-info p,
+.find-me-info a {
+    font-size: 16px;
+    color: #383737;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .find-me-info p,
+    .find-me-info a {
+        font-size: 12px;
+    }
+}
+
+.find-me-info a {
+    color: #929494;
+    text-decoration: none;
+}
+
+.find-me-info a:hover {
+    text-decoration: underline;
+}
+
+.find-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.find-me-column {
+    flex: 1;
+    min-width: 200px;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.find-me-column h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.find-me-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.find-me-column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .find-me-column ul li {
+        font-size: 12px;
+    }
+}
+
+.find-me-column ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.find-me-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.find-me-social-icons a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#contact {
+    padding: 40px 20px;
+    background-color: #F5F4F0;
+}
+
+.outreach-column ul.no-dash,
+.find-me-column ul.no-dash {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .outreach-column ul.no-dash,
+    .find-me-column ul.no-dash {
+        align-items: center;
+    }
+}
+
+.more-item {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .more-button {
+        display: block;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.expanded .more-item {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .more-button {
+        display: none;
+    }
+
+    .more-item {
+        display: block;
+    }
+}
+
+/* Alignment Fixes for Contact and Coordinates on Mobile */
+@media (max-width: 768px) {
+    .outreach-container,
+    .find-me-container {
+        flex-direction: column;
+        align-items: left;
+        padding: 10px;
+    }
+
+    .outreach-column ul.no-dash,
+    .find-me-column ul.no-dash {
+        align-items: left;
+        text-align: left;
+    }
+
+    .outreach-column,
+    .find-me-column {
+        padding: 10px;
+        width: 100%;
+        max-width: none; /* Allow full width for each column on mobile */
+        text-align: left;
+    }
+}
